@@ -7,6 +7,29 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.lenovo.scarnersdice.aboutgame">
+    tools:context="com.example.lenovo.scarnersdice.aboutgame"
+    android:background="#9ff8c3">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Instructions:-
+        Player 1 starts rolling the dice until 1 comes OR he can pass any time to palyer 2.Number appeared on dice is added to player's score.Interesting part is that if any player continues rolling dice and if 1 comes then his/her score sets to the initial score when he/she started rolling the dice.
+
+  Hope You Guys Like This Game.
+
+ For Any Suggestions You can Contact Me:-"
+        android:id="@+id/textView19"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Me"
+        android:id="@+id/contactbutton"
+        android:layout_below="@+id/textView19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
 </RelativeLayout>
