@@ -14,12 +14,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hey Guyzz"
-        android:layout_marginBottom="205dp"
         android:background="#ffffff"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:id="@+id/textView14"
-        android:textSize="15dp" />
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,43 +29,56 @@
         android:layout_centerHorizontal="true"
         android:background="#ffffff"
         android:text="My name is ADITYA NARAYAN SHAHI"
-        android:textSize="20dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="If you got any queries,suggestions"
-        android:id="@+id/textView16"
-        android:background="#ffffff"
-        android:layout_marginTop="32dp"
-        android:layout_below="@+id/textView15"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="or questions, Contact Me."
-        android:id="@+id/textView17"
-        android:layout_below="@+id/textView16"
-        android:layout_centerHorizontal="true"
-        android:background="#ffffff" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Email : adityan.shahi2014@gmail.com"
-        android:id="@+id/textView18"
-        android:background="#ffffff"
-        android:layout_below="@+id/textView17"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        android:textSize="16dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button11"
         android:background="@drawable/fb"
-        android:layout_below="@+id/textView18"
-        android:layout_toStartOf="@+id/textView16" />
+        android:paddingEnd="1dp"
+        android:paddingStart="1dp"
+        android:layout_below="@+id/textView15"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email-"
+        android:id="@+id/textView19"
+        android:background="#FFFFFF"
+        android:layout_alignTop="@+id/textView18"
+        android:layout_alignStart="@+id/button11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:background="#ffffff"
+        android:textColor="#0c10f1"
+        android:text="adityan.shahi2014@gmail.com"
+        android:layout_marginTop="88dp"
+        android:layout_below="@+id/textView15"
+        android:layout_toEndOf="@+id/textView19" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you got any queries, suggestions"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_marginTop="32dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or comments, Contact Me"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff" />
 
 </RelativeLayout>
