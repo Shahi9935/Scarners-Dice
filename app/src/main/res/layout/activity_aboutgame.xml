@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -15,11 +16,9 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Instructions:-
-        Player 1 starts rolling the dice until 1 comes OR he can pass any time to palyer 2.Number appeared on dice is added to player's score.Interesting part is that if any player continues rolling dice and if 1 comes then his/her score sets to the initial score when he/she started rolling the dice.
-
+        Player 1 starts rolling the dice and he can roll it any number of times until '1' comes. After each roll he can either choose to Roll Again or Pass to the opponent. If he chooses to pass, his current score will be saved and chance goes to opponent. But if he choses to roll and dice shows '1' then all the score he gained in that particular chance goes 0 and his score goes back to the last saved one.
   Hope You Guys Like This Game.
-
- For Any Suggestions You can Contact Me:-"
+ For Any Suggestions or queries You can Contact Me:-"
         android:id="@+id/textView19"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
