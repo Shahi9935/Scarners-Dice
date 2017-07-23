@@ -10,63 +10,60 @@
     tools:context="com.example.lenovo.scarnersdice.aboutme"
     android:background="@drawable/shahi">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hey Guyzz"
-        android:layout_marginBottom="205dp"
-        android:background="#ffffff"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView14"
-        android:textSize="15dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView15"
-        android:layout_marginTop="33dp"
-        android:layout_alignTop="@+id/textView14"
-        android:layout_centerHorizontal="true"
-        android:background="#ffffff"
-        android:text="My name is ADITYA NARAYAN SHAHI"
-        android:textSize="20dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="If you got any queries,suggestions"
-        android:id="@+id/textView16"
-        android:background="#ffffff"
-        android:layout_marginTop="32dp"
-        android:layout_below="@+id/textView15"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="or questions, Contact Me."
-        android:id="@+id/textView17"
-        android:layout_below="@+id/textView16"
-        android:layout_centerHorizontal="true"
-        android:background="#ffffff" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Email : adityan.shahi2014@gmail.com"
-        android:id="@+id/textView18"
-        android:background="#ffffff"
-        android:layout_below="@+id/textView17"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button11"
         android:background="@drawable/fb"
-        android:layout_below="@+id/textView18"
-        android:layout_toStartOf="@+id/textView16" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Developed By:- Aditya Narayan Shahi"
+        android:id="@+id/textView14"
+        android:textSize="20dp"
+        android:background="#00ff00"
+        android:layout_marginBottom="110dp"
+        android:layout_above="@+id/button11"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="For any queries OR suggestions Contact me on:-"
+        android:id="@+id/textView15"
+        android:layout_marginTop="29dp"
+        android:background="#00ff00"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Email-adityan.shahi2014@gmail.com"
+        android:id="@+id/textView16"
+        android:background="#ffbf00"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can ping me on  FB.
+ just Click on FB icon"
+        android:id="@+id/textView17"
+        android:textColor="#000000"
+        android:background="#ffbf00"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_below="@+id/textView14"
+        android:layout_toStartOf="@+id/button11" />
 
 </RelativeLayout>
