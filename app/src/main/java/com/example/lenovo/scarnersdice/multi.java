@@ -37,17 +37,11 @@ public class multi extends AppCompatActivity {
             public void onClick(View view) {
                 Random r= new Random();
                 x=r.nextInt(7-1)+1;
-                if(score1>=50)
-                {
-                Intent j = new Intent(multi.this,win1.class);
-                    startActivity(j);
-                    finish();
-                }
-                else  if(x==1)
+                if(x==1)
                 {
                     i1.setImageResource(R.drawable.dice1);
                     t1.setText(String.valueOf(total1));
-                    score1=total1;
+                    score1=0;
                     turndisplay1.setText(" ");
                     turndisplay2.setText("Your Turn");
 
@@ -56,31 +50,37 @@ public class multi extends AppCompatActivity {
                 {
                     i1.setImageResource(R.drawable.dice2);
                     score1+=x;
-                    t1.setText(String.valueOf(score1));
+                    t1.setText(String.valueOf(total1+score1));
                 }
                 else if(x==3)
                 {
                     i1.setImageResource(R.drawable.dice3);
                     score1+=x;
-                    t1.setText(String.valueOf(score1));
+                    t1.setText(String.valueOf(total1+score1));
                 }
                 else if(x==4)
                 {
                     i1.setImageResource(R.drawable.dice4);
                     score1+=x;
-                    t1.setText(String.valueOf(score1));
+                    t1.setText(String.valueOf(total1+score1));
                 }
                 else if(x==5)
                 {
                     i1.setImageResource(R.drawable.dice5);
                     score1+=x;
-                    t1.setText(String.valueOf(score1));
+                    t1.setText(String.valueOf(total1+score1));
                 }
                 else if(x==6)
                 {
                     i1.setImageResource(R.drawable.dice6);
                     score1+=x;
-                    t1.setText(String.valueOf(score1));
+                    t1.setText(String.valueOf(total1+score1));
+                }
+                if((score1+total1)>=50)
+                {
+                    Intent j1 = new Intent(multi.this,win1.class);
+                    startActivity(j1);
+                    finish();
                 }
             }
         });
@@ -90,17 +90,11 @@ public class multi extends AppCompatActivity {
             public void onClick(View view) {
                 Random r= new Random();
                 x=r.nextInt(7-1)+1;
-                if(score2>=50)
-                {
-                    Intent j = new Intent(multi.this,win2.class);
-                    startActivity(j);
-                    finish();
-                }
-                else if(x==1)
+                if(x==1)
                 {
                     i1.setImageResource(R.drawable.dice1);
                     t2.setText(String.valueOf(total2));
-                    score2=total2;
+                    score2=0;
                     turndisplay2.setText(" ");
                     turndisplay1.setText("Your Turn");
 
@@ -109,31 +103,37 @@ public class multi extends AppCompatActivity {
                 {
                     i1.setImageResource(R.drawable.dice2);
                     score2+=x;
-                    t2.setText(String.valueOf(score2));
+                    t2.setText(String.valueOf(total2+score2));
                 }
                 else if(x==3)
                 {
                     i1.setImageResource(R.drawable.dice3);
                     score2+=x;
-                    t2.setText(String.valueOf(score2));
+                    t2.setText(String.valueOf(total2+score2));
                 }
                 else if(x==4)
                 {
                     i1.setImageResource(R.drawable.dice4);
                     score2+=x;
-                    t2.setText(String.valueOf(score2));
+                    t2.setText(String.valueOf(total2+score2));
                 }
                 else if(x==5)
                 {
                     i1.setImageResource(R.drawable.dice5);
                     score2+=x;
-                    t2.setText(String.valueOf(score2));
+                    t2.setText(String.valueOf(total2+score2));
                 }
                 else if(x==6)
                 {
                     i1.setImageResource(R.drawable.dice6);
                     score2+=x;
-                    t2.setText(String.valueOf(score2));
+                    t2.setText(String.valueOf(total2+score2));
+                }
+                if((score2+total2)>=50)
+                {
+                    Intent j2 = new Intent(multi.this,win2.class);
+                    startActivity(j2);
+                    finish();
                 }
             }
         });
@@ -145,7 +145,7 @@ public class multi extends AppCompatActivity {
                 i1.setImageResource(R.drawable.wait);
                 turndisplay1.setText(" ");
                 turndisplay2.setText("Your Turn");
-                score1=total1;
+                score1=0;
 
             }
         });
@@ -157,7 +157,7 @@ public class multi extends AppCompatActivity {
                 i1.setImageResource(R.drawable.wait);
                 turndisplay1.setText("Your Turn");
                 turndisplay2.setText(" ");
-                score2=total2;
+                score2=0;
             }
         });
 
