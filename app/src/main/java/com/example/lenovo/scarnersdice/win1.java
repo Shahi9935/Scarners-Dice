@@ -8,11 +8,12 @@ import android.widget.Button;
 
 public class win1 extends AppCompatActivity {
 
-    Button mmwin1 = (Button)findViewById(R.id.button13);
+    Button mmwin1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_win1);
+        mmwin1=(Button)findViewById(R.id.button13);
         mmwin1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
