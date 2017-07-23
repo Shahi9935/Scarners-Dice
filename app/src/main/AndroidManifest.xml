@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.scarnersdice">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mpage" />
+        <activity android:name=".multi" />
+        <activity android:name=".multi_splash" />
+        <activity android:name=".single" />
+        <activity android:name=".aboutme" />
+        <activity android:name=".aboutgame" />
+        <activity android:name=".win1" />
+        <activity android:name=".win2"></activity>
+    </application>
+
+</manifest>
