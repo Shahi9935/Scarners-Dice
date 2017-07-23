@@ -12,7 +12,7 @@ public class aboutgame extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aboutgame);
-        Contact = (Button)findViewById(R.id.button14);
+        Contact = (Button)findViewById(R.id.contactbutton);
         Contact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
